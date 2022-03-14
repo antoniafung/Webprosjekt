@@ -1,0 +1,144 @@
+* {box-sizing: border-box;}
+body {font-family: georgia;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* menu bar*/
+body {
+    margin: 0;
+    font-family: georgia;
+    text-align: center;
+  }
+  
+/*control the whole menu bar*/
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  padding: 0.2em; /*vertical padding*/
+}
+
+.topnav a {
+  color: black; /* colours of the words*/
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+  background-color: greenyellow;
+  color: black;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+  
+/* The dots */
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 0;
+  background-color: #bbb;
+  border-radius: 10% 10%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* colour of the dot*/
+.active {
+  background-color: greenyellow;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* decrease text size on smaller screens*/
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*applies to all h1*/
+h1 {
+    text-align: center;
+    color: green;
+}
+
+/* applies to all headings */
+h2, h3, h4 {
+  text-align: left;
+  color: green;
+  padding-left: 5%;
+}
+
+p {
+  text-align: left;
+  color: rgb(50, 129, 48);
+  padding-left: 5%;
+}
+
+/* grid container in Utstilling.html*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto; /*2 coloumns - auto auto*/
+  background-color: white;
+  padding: 2%;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(14, 0, 0, 0.062); /* border: 0px = makes border invisible OR change the colour to white*/
+  text-align: left;
+  padding: 0%;
+}
+
+/* image grid */
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* search bar control in soek.html*/
+.searchbar {
+  position: relative; /* If I change "position: absolute", add "top: 150px; left: 50px" */
+  padding: 5%;
+}
+
+/* control the line in footer*/
+hr {
+  height: 1px;
+  background-color: green;
+  border: none;
+}

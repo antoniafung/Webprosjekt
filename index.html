@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="index-css.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Tussudal Bydgeuseum</title> <!--tab's name-->
+</head>
+
+
+<body>
+<h1>Tussudal Bydgemuseum</h1>
+<p></p>
+
+<!--menu bar--> <!--kan prøve med id="header" for å lage en felles header-->
+<div class="topnav">
+  <a href="index.html">Hjem</a>
+  <a href="utstillinger.html">Utstillinger</a>
+  <a href="nettutstilling.html">Nettutstilling</a>
+  <a href="aapningstid_og_omvisning.html">Åpningstider og Omvisning</a>
+  <a href="kontakt.html">Kontakt</a>
+  <a href="om_oss.html">Om oss</a>
+  <a href="soek.html">Søk</a>
+</div>
+<hr>
+
+
+<!--slideshow-->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="1.jpg" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="3.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"><span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+<!--javascript for slideshow-->
+<script>
+var slideIndex = 0; 
+showSlides();
+
+function showSlides() { 
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2500); // Change image every 2 seconds
+}
+</script>
+
+</body>
+
+<!--footer-->
+<div id="footer">
+  <hr>
+  <h5>Copyright &#169; 2022 Tussudal Museum</h5><br> 
+</div>
+
+</html> 
+
