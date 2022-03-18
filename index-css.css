@@ -130,6 +130,8 @@ p {
   vertical-align: middle;
 }
 
+
+
 /* search bar control in soek.html*/
 .searchbar {
   position: relative; /* If I change "position: absolute", add "top: 150px; left: 50px" */
