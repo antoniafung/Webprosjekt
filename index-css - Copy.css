@@ -30,11 +30,60 @@ body {
   color: black;
 }
 
+/* Slideshow container 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+  
+/* The dots 
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 0;
+  background-color: #bbb;
+  border-radius: 10% 10%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* colour of the dot
+.active {
+  background-color: greenyellow;
+}
+
+/* Fading animation 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* decrease text size on smaller screens
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+*/
+
+/*applies to all h1*/
 h1 {
     text-align: center;
     color: green;
 }
 
+/* applies to all headings */
 h2, h3, h4 {
   text-align: left;
   color: green;
@@ -47,7 +96,7 @@ p {
   padding-left: 5%;
 }
 
-/* grid container i Utstilling.html*/
+/* grid container in Utstilling.html*/
 .grid-container {
   display: grid;
   grid-template-columns: auto auto; /*2 coloumns - auto auto*/
